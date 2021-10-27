@@ -1,0 +1,276 @@
+@charset "UTF-8";
+.u-desktop {
+  display: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .u-desktop {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .u-mobile {
+    display: none;
+  }
+}
+
+/* FontFamily */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/* font-weight */
+/* リキッドレイアウト対応 */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 1.11111vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 4.26667vw;
+  }
+}
+
+/* pcの電話番号発信対応 */
+@media screen and (max-width: 767px) {
+  a[href^="tel:"] {
+    pointer-events: none;
+  }
+}
+
+/* ホバー */
+a {
+  text-decoration: none;
+  color: inherit;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  a:hover {
+    opacity: 1;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul,
+ol {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul,
+ol {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+  -webkit-filter: blur(10px);
+          filter: blur(10px);
+}
+
+/* フォームリセット */
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: none;
+}
+
+input[type="submit"],
+input[type="button"],
+label,
+button,
+select {
+  cursor: pointer;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+.appp {
+  margin: 1px;
+}
+
+.l-header {
+  height: 100px;
+}
+
+.c-cta-button {
+  background-color: #FFBA0E;
+  color: #060C41;
+}
+
+.l-inner {
+  width: 100%;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+}
+
+@media screen and (max-width: 767px) {
+  .l-inner {
+    max-width: 1490px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.p-header__button {
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: bold;
+  letter-spacing: .02em;
+  padding: 22px 63px;
+  padding: 1.375rem 3.9375rem;
+  border-radius: 100px;
+}
+
+.p-header__inner {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+}
+
+.p-header__logo {
+  width: 200px;
+}
+
+.p-header__right {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.p-header-nav__item {
+  margin-right: 40px;
+  margin-right: 2.5rem;
+}
+
+.p-header-nav__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-header-nav__link {
+  display: block;
+  font-size: 16px;
+  font-size: 1rem;
+  letter-spacing: .02em;
+}
+
+.p-header {
+  background-color: #000;
+  color: #fff;
+}
+
+.appp {
+  margin: 1px;
+}

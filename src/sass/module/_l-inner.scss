@@ -6,6 +6,7 @@
   padding-left: $padding-pc;
   margin-right: auto;
   margin-left: auto;
+  max-width: $inner;
   @include mq("md") {
     max-width: $inner + strip-unit($padding-pc) * 2;
     padding-right: $padding-sp;
