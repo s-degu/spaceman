@@ -1,0 +1,5 @@
+.p-footer-nav__item {
+  &:not(&:last-child) {
+    margin-right: rem(40);
+  }
+}
