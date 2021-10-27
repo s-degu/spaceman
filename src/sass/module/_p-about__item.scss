@@ -1,0 +1,15 @@
+.p-about__item {
+  align-items: flex-start;
+  display: flex;
+  &:nth-child(2) {
+      margin-top: rem(62);
+      flex-direction: row-reverse;
+      .p-about__textarea {
+          margin-left: 0;
+          margin-right: auto;
+      }
+  }
+  &:last-child {
+      margin-top: rem(75);
+  }
+}

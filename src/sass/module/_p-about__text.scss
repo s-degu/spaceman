@@ -1,0 +1,9 @@
+.p-about__text {
+  letter-spacing: .05em;
+  line-height: calc( 40 / 16);
+  margin-top: rem(31);
+}
+
+.p-about__text > span {
+  display: inline-block;
+}

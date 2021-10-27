@@ -1,0 +1,18 @@
+.c-about__label {
+  background: linear-gradient(180deg, rgba(125,98,28,1) 0%, rgba(188,188,188,1) 50%, rgba(125,98,28,1) 100%);
+  -webkit-background-clip: text;//テキストでくり抜く
+  color: white;
+  color: #7d621c;
+  display: block;
+  font-family: $third-font-family;
+  font-size: rem(120);
+  font-style: italic;
+  font-weight: bold;
+  left: 0;
+  letter-spacing: .05em;
+  line-height: 1;
+  position: absolute;
+  -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示 
+  top: -70px;
+  z-index: $layer-up;
+}
