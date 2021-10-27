@@ -1,9 +1,15 @@
 .c-section__sub-title {
   color: rgba(0, 0, 0, .5);
+  display: inline-block;
+  display: block;
   font-family: $second-font-family;
   font-size: rem(150);
   font-weight: bold;
-  text-transform: uppercase;
-  display: inline-block;
   line-height: 1;
+  text-transform: uppercase;
+}
+
+.c-section__sub-title--recruit {
+  color: rgba(255, 255, 255, .15);
+  text-align: right;
 }

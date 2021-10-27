@@ -1,0 +1,6 @@
+.p-recruit__item {
+  display: flex;
+  & + & {
+    margin-top: rem(40);
+  }
+}

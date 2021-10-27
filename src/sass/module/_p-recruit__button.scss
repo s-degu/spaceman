@@ -1,0 +1,22 @@
+.p-recruit__button {
+  font-size: rem(24);
+  line-height: calc(32/24);
+  padding: rem(20) rem(105);
+  border-radius: 100px;
+  position: relative;
+  opacity: 1;
+  z-index: $layer-default;
+  &::before {
+    position: absolute;
+    top: -3px;
+    left: -16px;
+    width: 110%;
+    height: 119%;
+    z-index: $layer-background;
+    content: "";
+    display: block;
+    background-color: #060C41;
+    border-radius: 100px;
+    // opacity: 1;
+  }
+}
