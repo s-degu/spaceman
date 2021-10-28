@@ -22,3 +22,9 @@
   color: #e0e0e0;
   text-align: right;
 }
+
+.c-section__sub-title--faq {
+  color: rgba(255, 255, 255, .2);
+  position: relative;
+  z-index: $layer-up;
+}

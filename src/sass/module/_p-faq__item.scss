@@ -1,0 +1,5 @@
+.p-faq__item {
+  & + & {
+    margin-top: rem(40);
+  }
+}

@@ -1,0 +1,33 @@
+.p-faq__data {
+  background-color: $navy;
+  color: $white;
+  letter-spacing: .02em;
+  line-height: calc(32/16);
+  border-radius: 0 0 10px 10px;
+  padding-top: rem(19);
+  padding-bottom: rem(20);
+  padding-left: rem(95);
+  padding-right: rem(67);
+  position: relative;
+  &::before {
+    background-color: $white;
+    color: $navy;
+    content: "A";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $second-font-family;
+    font-size: rem(24);
+    height: 43px;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 43px;
+    border-radius: 50%;
+  }
+}
+
+.p-faq__data > span {
+    display: block;
+}

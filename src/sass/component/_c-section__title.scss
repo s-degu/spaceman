@@ -5,6 +5,8 @@
   letter-spacing: .05em;
   line-height: 1;
   text-align: center;
+  position: relative;
+  z-index: $layer-up;
 }
 
 .c-section__title--instagram {

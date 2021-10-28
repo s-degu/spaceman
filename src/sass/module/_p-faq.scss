@@ -1,0 +1,17 @@
+.p-faq {
+  background-image: url(../../../assets/images/faq_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::before {
+      position: absolute;
+      display: block;
+      content: "";
+      background-color: rgba(0, 0, 0, 0.4);
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+}

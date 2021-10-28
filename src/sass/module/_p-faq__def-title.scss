@@ -1,0 +1,39 @@
+.p-faq__def-title {
+  background-color: $white;
+  border-radius: 10px 10px 0 0;
+  color: #1a1a1a;
+  line-height: calc(32/16);
+  padding-bottom: rem(25);
+  padding-left: rem(95);
+  padding-right: rem(67);
+  padding-top: rem(20);
+  position: relative;
+  &::before {
+    background-color: $navy;
+    color: $white;
+    content: "Q";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $second-font-family;
+    font-size: rem(24);
+    height: 43px;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 43px;
+    border-radius: 50%;
+  }
+  &::after {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      content: "\f077";
+      display: block;
+      font-size: 1.5em;
+      font-weight: 900;
+      font-family: 'Font Awesome 5 Free';
+  }
+}
