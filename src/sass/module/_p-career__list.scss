@@ -1,0 +1,6 @@
+.p-career__list {
+  width: calc(100% / 3 - 91px * 2 / 3);
+  &:not(&:nth-child(3n)) {
+      margin-right: rem(91);
+  }
+}

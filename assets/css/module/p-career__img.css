@@ -1,0 +1,11 @@
+.p-career__img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.p-career__img img {
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
+}

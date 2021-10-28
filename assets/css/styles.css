@@ -190,6 +190,11 @@ select::-ms-expand {
   padding-bottom: 9.125rem;
 }
 
+.l-career {
+  padding-bottom: 145px;
+  padding-bottom: 9.0625rem;
+}
+
 .l-footer {
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
@@ -256,6 +261,10 @@ select::-ms-expand {
 .c-section__sub-title--recruit {
   color: rgba(255, 255, 255, .15);
   text-align: right;
+}
+
+.c-section__sub-title--career {
+  color: rgba(255, 255, 255, .05);
 }
 
 .c-section__title {
@@ -372,6 +381,63 @@ select::-ms-expand {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.p-career__inner {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1191px;
+  width: 100%;
+}
+
+.p-career__list {
+  width: calc(33.33333% - 60.66667px);
+}
+
+.p-career__list:not(.p-career__list:nth-child(3n)) {
+  margin-right: 91px;
+  margin-right: 5.6875rem;
+}
+
+.p-career__lists-wrap {
+  background-color: #fff;
+  padding: 60px 52px 60px 59px;
+  padding: 3.75rem 3.25rem 3.75rem 3.6875rem;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+}
+
+.p-career__lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-career__text {
+  color: #fff;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  margin-top: 60px;
+  margin-top: 3.75rem;
+  padding-right: 278px;
+  padding-right: 17.375rem;
+}
+
+.p-career__title {
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+.p-career {
+  background: -webkit-gradient(linear, left top, left bottom, from(#0e112c), color-stop(50%, #0e112c), color-stop(50%, #acacac), to(#acacac));
+  background: linear-gradient(180deg, #0e112c 0%, #0e112c 50%, #acacac 50%, #acacac 100%);
 }
 
 .p-footer__logo img {
@@ -653,7 +719,6 @@ select::-ms-expand {
 
 .p-recruit__text {
   color: #fff;
-  display: inline-block;
   font-size: 20px;
   font-size: 1.25rem;
   line-height: 1.5;
@@ -704,6 +769,18 @@ select::-ms-expand {
 
 .appp {
   margin: 1px;
+}
+
+.p-career__img {
+  padding-top: 100%;
+  position: relative;
+}
+
+.p-career__img img {
+  border-radius: 50%;
+  left: 0;
+  position: absolute;
+  top: 0;
 }
 
 .fab {
