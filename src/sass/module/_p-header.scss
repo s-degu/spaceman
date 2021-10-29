@@ -1,4 +1,9 @@
 .p-header {
   background-color: $black;
   color: $white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $layer-header;
+  width: 100%;
 }

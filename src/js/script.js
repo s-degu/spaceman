@@ -1,12 +1,13 @@
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  $("#MenuButton").click(function () {
-    // $(".l-drawer-menu").toggleClass("is-show");
-    // $(".p-drawer-menu").toggleClass("is-show");
-    $(".js-drawer-open").toggleClass("open");
-    $(".drawer-menu").toggleClass("open");
-    $("html").toggleClass("is-fixed");
 
-  });
+  // $("#MenuButton").click(function () {
+  //   // $(".l-drawer-menu").toggleClass("is-show");
+  //   // $(".p-drawer-menu").toggleClass("is-show");
+  //   $(".js-drawer-open").toggleClass("open");
+  //   $(".drawer-menu").toggleClass("open");
+  //   $("html").toggleClass("is-fixed");
+
+  // });
 
 
 
@@ -35,7 +36,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
 
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
-
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
     let header = $('header').innerHeight();

@@ -207,6 +207,13 @@ select::-ms-expand {
   padding-bottom: 9.125rem;
 }
 
+.l-footer-hero {
+  padding-top: 49px;
+  padding-top: 3.0625rem;
+  padding-bottom: 51px;
+  padding-bottom: 3.1875rem;
+}
+
 .l-footer {
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
@@ -304,6 +311,23 @@ select::-ms-expand {
 
 .c-section__title--instagram {
   color: #333;
+}
+
+.footer-hero__text {
+  font-size: 36px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.footer-hero__text + span {
+  display: inline-block;
+  margin-top: 20px;
+  margin-top: 1.25rem;
+  font-family: "MV Boli", sans-serif;
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1.33333;
 }
 
 .l-inner {
@@ -728,6 +752,42 @@ select::-ms-expand {
   text-align: center;
 }
 
+.p-footer-hero__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 57.55395%;
+          flex: 0 0 57.55395%;
+  padding-top: 35.97122%;
+}
+
+.p-footer-hero__items {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.p-footer-hero__textarea {
+  background-color: #fff;
+  color: #000;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50.35971%;
+          flex: 0 0 50.35971%;
+  margin-left: -140px;
+  position: relative;
+  z-index: 2;
+  padding: 45px 26px;
+  padding: 2.8125rem 1.625rem;
+}
+
+.p-footer-hero {
+  background-image: url(../../../assets/images/footer-hero_bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .p-footer-nav__item:not(.p-footer-nav__item:last-child) {
   margin-right: 40px;
   margin-right: 2.5rem;
@@ -971,16 +1031,21 @@ select::-ms-expand {
 .p-header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  width: 100%;
 }
 
 .p-hero__author {
   display: block;
+  font-family: "MV Boli", sans-serif;
   margin-top: 10px;
   margin-top: 0.625rem;
 }
 
 .p-hero__sub-title {
-  display: inline-block;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: bold;
@@ -1247,4 +1312,16 @@ textarea:focus {
   border-color: #ffba0e;
   -webkit-box-shadow: 0 0 7px -1px #ffba0e;
           box-shadow: 0 0 7px -1px #ffba0e;
+}
+
+.u-img-aspect {
+  position: relative;
+}
+
+.u-img-aspect img {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }

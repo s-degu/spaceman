@@ -1,0 +1,13 @@
+.footer-hero__text {
+  font-size: rem(36);
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.footer-hero__text + span {
+  display: inline-block;
+  margin-top: rem(20);
+  font-family: $author-font-family;
+  font-size: rem(24);
+  line-height: calc(32/24);
+}
