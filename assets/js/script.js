@@ -9,6 +9,14 @@ jQuery(function ($) {
   //   $(".drawer-menu").toggleClass("open");
   //   $("html").toggleClass("is-fixed");
   // });
+  //ヘッダー背景変化
+  $(window).on('scroll', function () {
+    if ($('.p-hero').height() < $(this).scrollTop()) {
+      $('.p-header').addClass('is-scrolled');
+    } else {
+      $('.p-header').removeClass('is-scrolled');
+    }
+  });
   var topBtn = $('.c-page-top');
   topBtn.hide(); // ボタンの表示設定
 

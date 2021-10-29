@@ -4,6 +4,11 @@
   left: 0;
   position: fixed;
   top: 0;
+  transition: background-color .5s;
   width: 100%;
   z-index: $layer-header;
+}
+
+.p-header.is-scrolled {
+  background-color: rgba(0, 0, 0, .8);
 }
