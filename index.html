@@ -39,7 +39,7 @@
     <div class="l-inner p-header__inner">
       <div class="p-header__left">
         <h1 class="p-header__logo">
-          <img src="./assets/images/logo.png" alt="NOZA">
+          <a href="#"><img src="./assets/images/logo.png" alt="NOZA"></a>
         </h1>
       </div>
       <div class="p-header__right">
@@ -317,6 +317,81 @@
     </div>
   </section>
   <!-- 👆faq -->
+
+  <!-- 👇応募フォーム -->
+  <div class="l-contact p-contact">
+    <div class="l-inner p-form__inner">
+      <div class="p-contact__form-wrap">
+        <div class="p-form__inner-none">          
+          <div class="p-contact__heaading">
+            <h2 class="p-contact__title">応募フォーム</h2>
+            <p class="p-contact__text">宇宙飛行士になりたい方はこちらのフォームにご記入のうえ、送信してください。令和3年10月中旬にNOZAより通知をお送りいたします。</p>
+          </div>
+          <form action="" method="post" class="p-contact__form p-form">
+            <dl class="p-form__def">
+              <div class="p-form__item">
+                <dt class="p-form__def-title">
+                  <label for="form-name">お名前<span class="p-form__label">必須</span></label>
+                </dt>
+                <dd class="p-form__data">
+                  <input type="text" name="name" id="form-name" placeholder="お名前をご記入ください">
+                </dd>
+              </div>
+              <div class="p-form__item">
+                <dt class="p-form__def-title">
+                  <label for="form-kana">フリガナ<span class="p-form__label">必須</span></label>
+                </dt>
+                <dd class="p-form__data">
+                  <input type="text" name="kana" id="form-kana" placeholder="フリガナをご記入ください">
+                </dd>
+              </div>
+              <div class="p-form__item">
+                <dt class="p-form__def-title">
+                  <label for="form-birthday">生年月日<span class="p-form__label">必須</span></label>
+                </dt>
+                <dd class="p-form__data">
+                  <input type="text" name="birthday" id="form-birthday" placeholder="生年月日をご記入ください">
+                </dd>
+              </div>
+              <div class="p-form__item">
+                <dt class="p-form__def-title">
+                  <label for="form-mail">メールアドレス<span class="p-form__label">必須</span></label>
+                </dt>
+                <dd class="p-form__data">
+                  <input type="email" name="email" id="form-mail" placeholder="メールアドレスをご記入ください">
+                </dd>
+              </div>
+              <div class="p-form__item">
+                <dt class="p-form__def-title">
+                  <label for="form-address">ご住所<span class="p-form__label">必須</span></label>
+                </dt>
+                <dd class="p-form__data">
+                  <input type="text" name="address" id="form-address" placeholder="ご住所をご記入ください">
+                </dd>
+              </div>
+              <div class="p-form__item p-form__item--textarea">
+                <dt class="p-form__def-title">
+                  <label for="form-textarea">ご質問など</label>
+                </dt>
+                <dd class="p-form__data">
+                  <textarea name="textarea" id="form-textarea" placeholder="ご質問などがあればご記入ください"></textarea>
+                </dd>
+              </div>
+              <div class="p-form__privacy-wrap">
+                <input type="checkbox" name="privacy" id="form-privacy">
+                <label class="p-form__privacy" for="form-privacy">プライバシーポリシーに同意する</label>
+              </div>
+              <div class="p-form__button">
+                <button class="p-form__submit" type="submit">送信する</button>
+              </div>
+            </dl>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- 👆応募フォーム -->
 
   <!-- 👇フッター -->
   <footer class="l-footer p-footer">

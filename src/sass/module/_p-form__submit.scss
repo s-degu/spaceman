@@ -1,0 +1,17 @@
+.p-form__submit {
+  background-color: $navy;
+  border: 2px solid $navy;
+  border-radius: 100px;
+  color: $white;
+  display: inline-block;
+  font-size: rem(24);
+  font-weight: bold;
+  letter-spacing: .02em;
+  line-height: calc(32/24);
+  padding: rem(20) rem(142);
+  transition: background-color .5s, color .5s;
+  &:hover {
+    background-color: $white;
+    color: $navy;
+  }
+}

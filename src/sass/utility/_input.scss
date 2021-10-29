@@ -1,0 +1,44 @@
+// フォームのCSSをまとめて記述
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: solid 1px #5b5b5b;
+  border-radius: 2px;
+  padding: rem(17) rem(20);
+  width: 100%;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+// チェックボックスのチェック時の動作
+input[type=checkbox]:checked + .p-form__privacy::after {
+  opacity: 1;
+}
+
+// ホバー、フォーカス時の挙動
+input[type="text"],
+input[type="email"],
+textarea {
+  transition: box-shadow .5s, border-color .5s;
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    box-shadow: 0 0 8px -2px $accent-color;
+  }
+}
+
+.p-form__privacy {
+  &::before {
+    transition: border-color .5s, box-shadow .5s;
+  }
+  &:hover {
+    &::before {
+      border-color: $accent-color;
+      box-shadow: 0 0 7px -1px $accent-color;
+    }
+  }
+}

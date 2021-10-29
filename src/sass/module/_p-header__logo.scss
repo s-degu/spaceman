@@ -1,3 +1,7 @@
 .p-header__logo {
   width: 200px;
 }
+
+.p-header__logo > a {
+  display: block;
+}

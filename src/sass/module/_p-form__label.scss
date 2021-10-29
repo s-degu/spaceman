@@ -1,0 +1,10 @@
+.p-form__label {
+  background-color: $red;
+  color: $white;
+  font-size: rem(12);
+  line-height: calc(16/12);
+  padding: rem(2) rem(8);
+  border-radius: 2px;
+  display: inline-block;
+  margin-left: rem(10);
+}

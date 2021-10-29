@@ -1,0 +1,11 @@
+.p-form__item {
+  align-items: center;
+  display: flex;
+  & + & {
+    margin-top: rem(30);
+  }
+}
+
+.p-form__item--textarea {
+  align-items: flex-start;
+}
