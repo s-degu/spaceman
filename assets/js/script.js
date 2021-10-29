@@ -9,7 +9,7 @@ jQuery(function ($) {
   //   $(".drawer-menu").toggleClass("open");
   //   $("html").toggleClass("is-fixed");
   // });
-  var topBtn = $('.pagetop');
+  var topBtn = $('.c-page-top');
   topBtn.hide(); // ボタンの表示設定
 
   $(window).scroll(function () {
