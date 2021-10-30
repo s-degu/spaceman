@@ -22,7 +22,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   var topBtn = $('.c-page-top');
   topBtn.hide();
 
-  // ボタンの表示設定
+  // トップページボタンの表示設定
   $(window).scroll(function () {
     if ($(this).scrollTop() > $('.p-hero').height()) {
       // 指定px以上のスクロールでボタンを表示
@@ -41,8 +41,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     return false;
   });
 
-  
-  //アコーディオンをクリックした時の動作
+  // in-view設定用
+  $(function () {
+    $(".js-inview").on("inview", function (event, isInView) {
+      if (isInView) {
+        $(this).stop().addClass("is-show");
+      } else {
+        $(this).stop().removeClass("is-show");
+      }
+    });
+  });
+
+
+  // アコーディオンをクリックした時の動作
   $('.js-accordion').on('click', function () {//タイトル要素をクリックしたら
     $('.p-faq__data').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
 
@@ -68,8 +79,8 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
       // $(Box).addClass(".test"); //アコーディオンを開く
     });
   });
-  
-  
+
+
   // スムーススクロール (絶対パスのリンク先が現在のページであった場合でも作動)
   $(document).on('click', 'a[href*="#"]', function () {
     let time = 400;
@@ -80,5 +91,5 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('html,body').animate({ scrollTop: targetY }, time, 'swing');
     return false;
   });
-  
+
 });

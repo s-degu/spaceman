@@ -1,0 +1,12 @@
+// in view用のCSSをまとめて記述
+
+//左からのフェードイン
+.fadeIn-left {
+  opacity: 0;
+  transform: translate(-50%, 0);
+  transition: 2s;
+}
+.fadeIn-left.is-show {
+  opacity: 1;
+  transform: translate(0, 0);
+}

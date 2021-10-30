@@ -18,7 +18,7 @@ jQuery(function ($) {
     }
   });
   var topBtn = $('.c-page-top');
-  topBtn.hide(); // ボタンの表示設定
+  topBtn.hide(); // トップページボタンの表示設定
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > $('.p-hero').height()) {
@@ -35,7 +35,17 @@ jQuery(function ($) {
       scrollTop: 0
     }, 300, 'swing');
     return false;
-  }); //アコーディオンをクリックした時の動作
+  }); // in-view設定用
+
+  $(function () {
+    $(".js-inview").on("inview", function (event, isInView) {
+      if (isInView) {
+        $(this).stop().addClass("is-show");
+      } else {
+        $(this).stop().removeClass("is-show");
+      }
+    });
+  }); // アコーディオンをクリックした時の動作
 
   $('.js-accordion').on('click', function () {
     //タイトル要素をクリックしたら

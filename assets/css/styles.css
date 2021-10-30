@@ -186,6 +186,20 @@ select::-ms-expand {
   margin: 1px;
 }
 
+.fadeIn-left {
+  opacity: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.fadeIn-left.is-show {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
 .l-about {
   padding-bottom: 146px;
   padding-bottom: 9.125rem;
@@ -1171,6 +1185,7 @@ select::-ms-expand {
   padding-bottom: 2rem;
   padding-left: 30px;
   padding-left: 1.875rem;
+  position: relative;
 }
 
 .p-insta__item img {
