@@ -627,6 +627,7 @@ select::-ms-expand {
   padding-right: 67px;
   padding-right: 4.1875rem;
   position: relative;
+  display: none;
 }
 
 .p-faq__data::before {
@@ -663,6 +664,7 @@ select::-ms-expand {
   background-color: #fff;
   border-radius: 10px 10px 0 0;
   color: #1a1a1a;
+  cursor: pointer;
   line-height: 2;
   padding-bottom: 25px;
   padding-bottom: 1.5625rem;
@@ -676,42 +678,50 @@ select::-ms-expand {
 }
 
 .p-faq__def-title::before {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #0E112C;
+  border-radius: 50%;
   color: #fff;
   content: "Q";
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "Lato", sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   height: 43px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   left: 20px;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 43px;
-  border-radius: 50%;
 }
 
 .p-faq__def-title::after {
+  content: "\f077";
+  display: block;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 1.5em;
+  font-weight: 900;
   position: absolute;
+  right: 20px;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  right: 20px;
-  content: "\f077";
-  display: block;
-  font-size: 1.5em;
-  font-weight: 900;
-  font-family: 'Font Awesome 5 Free';
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.p-faq__def-title.close::after {
+  top: 25%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .p-faq__inner {

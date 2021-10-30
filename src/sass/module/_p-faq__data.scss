@@ -9,6 +9,7 @@
   padding-left: rem(95);
   padding-right: rem(67);
   position: relative;
+  display: none;
   &::before {
     background-color: $white;
     color: $navy;

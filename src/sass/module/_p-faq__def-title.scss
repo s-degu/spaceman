@@ -2,6 +2,7 @@
   background-color: $white;
   border-radius: 10px 10px 0 0;
   color: #1a1a1a;
+  cursor: pointer;
   line-height: calc(32/16);
   padding-bottom: rem(25);
   padding-left: rem(95);
@@ -9,31 +10,40 @@
   padding-top: rem(20);
   position: relative;
   &::before {
+    align-items: center;
     background-color: $navy;
+    border-radius: 50%;
     color: $white;
     content: "Q";
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: $second-font-family;
     font-size: rem(24);
     height: 43px;
+    justify-content: center;
     left: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 43px;
-    border-radius: 50%;
   }
   &::after {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 20px;
-      content: "\f077";
-      display: block;
-      font-size: 1.5em;
-      font-weight: 900;
-      font-family: 'Font Awesome 5 Free';
+    content: "\f077";
+    display: block;
+    font-family: 'Font Awesome 5 Free';
+    font-size: 1.5em;
+    font-weight: 900;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .5s;
+  }
+}
+
+//アコーディオンが開いたときの矢印の動き
+.p-faq__def-title.close {
+  &::after {
+    top: 25%;
+    transform: rotate(180deg);
   }
 }
