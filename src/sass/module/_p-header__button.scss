@@ -1,7 +1,43 @@
 .p-header__button {
+  border-radius: 100px;
+  display: inline-block;
   font-size: rem(18);
   font-weight: bold;
   letter-spacing: .02em;
+  overflow: hidden;
   padding: rem(22) rem(63);
-  border-radius: 100px;
+  position: relative;
+  &::before {
+    background-image: linear-gradient(100deg,  rgba(255, 255, 255, 0) 10%, rgba(255, 255, 255, 1) 100%, rgba(255, 255, 255, 0) 0%);
+    content: '';
+    height: 50px;
+    left: -100px;
+    /*絶対配置でキラッと光るの位置を決める*/
+    position: absolute;
+    top: -100px;
+    transform: skewX(-25deg);
+    width: 50px;
+    /*キラッと光る形状*/
+  }
+  &:hover {
+    &::before {
+      animation: shine 2s ease-in-out infinite;
+    }
+  }
+  @keyframes shine {
+    0% {
+      opacity: 0;
+      transform: scale(0) rotate(25deg);
+    }
+
+    50% {
+      opacity: 1;
+      transform: scale(1) rotate(25deg);
+    }
+
+    100% {
+      opacity: 0;
+      transform: scale(50) rotate(25deg);
+    }
+  }
 }
