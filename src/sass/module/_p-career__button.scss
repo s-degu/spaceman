@@ -1,7 +1,7 @@
 .p-career__button {
   margin-top: rem(58);
   text-align: right;
-  margin-right: rem(80);
+  margin-right: rem(173);
 }
 
 .p-career__button > a {
@@ -9,24 +9,23 @@
   font-size: rem(18);
   font-weight: bold;
   letter-spacing: .02em;
-  position: relative;
-  &::after {
-    border: none;
-    bottom: -4px;
-    content: '';
-    height: 0;
-    border-bottom: solid 15px #da3c41;
-    border-right: solid 15px transparent;
-    right: 0;
-    position: absolute;
-    width: 0;
-  }
-  &::before {
-    border-bottom: solid 4px #da3c41;
-    bottom: -4px;
-    content: '';
-    left: 10px;
-    position: absolute;
-    width: 100%;
-  }
+  // &::after {
+  //   border: none;
+  //   bottom: -4px;
+  //   content: '';
+  //   height: 0;
+  //   border-bottom: solid 15px #333;
+  //   border-right: solid 15px transparent;
+  //   right: 0;
+  //   position: absolute;
+  //   width: 0;
+  // }
+  // &::before {
+  //   border-bottom: solid 4px #333;
+  //   bottom: -4px;
+  //   content: '';
+  //   left: 10px;
+  //   position: absolute;
+  //   width: 100%;
+  // }
 }

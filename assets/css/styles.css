@@ -485,8 +485,8 @@ select::-ms-expand {
   margin-top: 58px;
   margin-top: 3.625rem;
   text-align: right;
-  margin-right: 80px;
-  margin-right: 5rem;
+  margin-right: 173px;
+  margin-right: 10.8125rem;
 }
 
 .p-career__button > a {
@@ -495,28 +495,6 @@ select::-ms-expand {
   font-size: 1.125rem;
   font-weight: bold;
   letter-spacing: .02em;
-  position: relative;
-}
-
-.p-career__button > a::after {
-  border: none;
-  bottom: -4px;
-  content: '';
-  height: 0;
-  border-bottom: solid 15px #da3c41;
-  border-right: solid 15px transparent;
-  right: 0;
-  position: absolute;
-  width: 0;
-}
-
-.p-career__button > a::before {
-  border-bottom: solid 4px #da3c41;
-  bottom: -4px;
-  content: '';
-  left: 10px;
-  position: absolute;
-  width: 100%;
 }
 
 .p-career__inner {
@@ -1439,6 +1417,51 @@ textarea:focus {
   border-color: #ffba0e;
   -webkit-box-shadow: 0 0 7px -1px #ffba0e;
           box-shadow: 0 0 7px -1px #ffba0e;
+}
+
+.line-arrow {
+  position: relative;
+}
+
+.line-arrow::before {
+  background-color: #333;
+  bottom: -8px;
+  content: "";
+  display: block;
+  height: 2px;
+  /*傾きを調節*/
+  left: 0;
+  position: absolute;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  width: 200%;
+}
+
+.line-arrow::after {
+  background: #333;
+  bottom: -4px;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  right: -102%;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  /*アニメーションの指定*/
+  transition: all .3s;
+  /*矢印の形状*/
+  width: 15px;
+}
+
+/*hoverした際の移動*/
+.line-arrow:hover::before {
+  width: 220%;
+}
+
+.line-arrow:hover::after {
+  right: -122%;
 }
 
 .u-img-aspect {

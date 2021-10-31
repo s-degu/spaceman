@@ -1,0 +1,41 @@
+.line-arrow {
+  position: relative;
+  &::before {
+    background-color: #333;
+    bottom: -8px;
+    content: "";
+    display: block;
+    height: 2px;
+    /*傾きを調節*/
+    //   transform: skew(45deg);
+    left: 0;
+    // margin: -10px 0 0 -25px;
+    position: absolute;
+    transition: all .3s;
+    width: 200%;
+  }
+  &::after {
+    background: #333;
+    bottom: -4px;
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    right: -102%;
+    transform: rotate(35deg);
+    transition: all .3s;
+    /*アニメーションの指定*/
+    transition: all .3s;
+    /*矢印の形状*/
+    width: 15px;
+  }
+}
+
+/*hoverした際の移動*/
+.line-arrow:hover::before {
+  width: 220%;
+}
+
+.line-arrow:hover::after {
+  right: -122%;
+}
