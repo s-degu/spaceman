@@ -3,6 +3,10 @@
   box-shadow: 0 3px 0 5px $cta-bg; /*cssの影の機能を利用してボタンの側面を描いています。ボタンの色より暗い色を指定しましょう*/
   display: inline-block;
   font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(18);
+    padding: rem(20) rem(55);
+  }
   line-height: calc(32/24);
   opacity: 1;
   padding: rem(20) rem(105);

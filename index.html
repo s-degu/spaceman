@@ -62,6 +62,17 @@
           <a href="#contact" class="c-cta-button p-header__button">応募する</a>
         </div>
       </div>
+      <!-- 👇ドロワーメニューボタン -->
+      <div class="p-header__drawer p-drawer">
+        <a class="p-drawer__link" href="#">
+          <div class="p-drawer__toggle js-drawer" data-target="p-drawer__toggle">
+            <span class="p-drawer__toggle-icon"></span>
+            <span class="p-drawer__toggle-icon"></span>
+            <span class="p-drawer__toggle-icon"></span>
+          </div>
+        </a>
+      </div>
+      <!-- 👇ドロワーメニューボタン -->
     </div>
   </header>
   <!-- 👆ヘッダー -->
@@ -104,7 +115,7 @@
         </div>
         <div class="p-about__item">
           <div class="p-about__img">
-            <span class="c-about__label">Ⅱ</span>
+            <span class="c-about__label c-about__label--two">Ⅱ</span>
             <img src="./assets/images/about02.jpg" alt="月面着陸">
           </div>
           <div class="p-about__textarea">
@@ -338,7 +349,7 @@
                   <label for="form-name">お名前<span class="p-form__label">必須</span></label>
                 </dt>
                 <dd class="p-form__data">
-                  <input type="text" name="name" id="form-name" placeholder="お名前をご記入ください">
+                  <input required type="text" name="name" id="form-name" placeholder="お名前をご記入ください">
                 </dd>
               </div>
               <div class="p-form__item">
@@ -346,7 +357,7 @@
                   <label for="form-kana">フリガナ<span class="p-form__label">必須</span></label>
                 </dt>
                 <dd class="p-form__data">
-                  <input type="text" name="kana" id="form-kana" placeholder="フリガナをご記入ください">
+                  <input required type="text" name="kana" id="form-kana" placeholder="フリガナをご記入ください">
                 </dd>
               </div>
               <div class="p-form__item">
@@ -354,7 +365,7 @@
                   <label for="form-birthday">生年月日<span class="p-form__label">必須</span></label>
                 </dt>
                 <dd class="p-form__data">
-                  <input type="text" name="birthday" id="form-birthday" placeholder="生年月日をご記入ください">
+                  <input required type="text" name="birthday" id="form-birthday" placeholder="生年月日をご記入ください">
                 </dd>
               </div>
               <div class="p-form__item">
@@ -362,7 +373,7 @@
                   <label for="form-mail">メールアドレス<span class="p-form__label">必須</span></label>
                 </dt>
                 <dd class="p-form__data">
-                  <input type="email" name="email" id="form-mail" placeholder="メールアドレスをご記入ください">
+                  <input required type="email" name="email" id="form-mail" placeholder="メールアドレスをご記入ください">
                 </dd>
               </div>
               <div class="p-form__item">
@@ -370,7 +381,7 @@
                   <label for="form-address">ご住所<span class="p-form__label">必須</span></label>
                 </dt>
                 <dd class="p-form__data">
-                  <input type="text" name="address" id="form-address" placeholder="ご住所をご記入ください">
+                  <input required type="text" name="address" id="form-address" placeholder="ご住所をご記入ください">
                 </dd>
               </div>
               <div class="p-form__item p-form__item--textarea">
@@ -422,16 +433,16 @@
         </div>
         <ul class="p-footer__nav-items p-footer-nav">
           <li class="p-footer-nav__item">
-            <a href="#" class="p-footer-nav__link c-hover-opacity">宇宙のお仕事について</a>
+            <a href="#about" class="p-footer-nav__link c-hover-opacity">宇宙のお仕事について</a>
           </li>
           <li class="p-footer-nav__item">
-            <a href="#" class="p-footer-nav__link c-hover-opacity">宇宙飛行士募集</a>
+            <a href="#recruit" class="p-footer-nav__link c-hover-opacity">宇宙飛行士募集</a>
           </li>
           <li class="p-footer-nav__item">
-            <a href="#" class="p-footer-nav__link c-hover-opacity">よくあるご質問</a>
+            <a href="#faq" class="p-footer-nav__link c-hover-opacity">よくあるご質問</a>
           </li>
           <li class="p-footer-nav__item">
-            <a href="#" class="p-footer-nav__link c-hover-opacity">応募フォーム</a>
+            <a href="#contact" class="p-footer-nav__link c-hover-opacity">応募フォーム</a>
           </li>
         </ul>
         <div class="p-footer__sns-wrap p-footer-sns">
@@ -443,10 +454,7 @@
               <a href="#" class="p-footer-sns__link c-hover-opacity"><i class="fab fa-facebook-f"></i></a>
             </li>
             <li class="p-footer-sns__item">
-              <a href="#" class="p-footer-sns__link c-hover-opacity"><i class="fab fa-twitter"></i></a>
-            </li>
-            <li class="p-footer-sns__item">
-              <a href="#" class="p-footer-sns__link c-hover-opacity"><i class="fab fa-twitter"></i></a>
+              <a href="#" class="p-footer-sns__link c-hover-opacity"><i class="fab fa-youtube"></i></a>
             </li>
             <li class="p-footer-sns__item">
               <a href="#" class="p-footer-sns__link c-hover-opacity"><i class="fab fa-instagram"></i></a>

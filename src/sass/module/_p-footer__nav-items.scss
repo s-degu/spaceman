@@ -2,4 +2,7 @@
   display: flex;
   justify-content: center;
   margin-top: rem(20);
+  @include mq(md) {
+    flex-direction: column;
+  }
 }

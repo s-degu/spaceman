@@ -1,3 +1,6 @@
 .p-career__lists {
   display: flex;
+  @include mq(md) {
+    flex-direction: column;
+  }
 }

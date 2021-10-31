@@ -8,6 +8,10 @@
   font-size: rem(120);
   font-style: italic;
   font-weight: bold;
+  @include mq(md) {
+    font-size: rem(60);
+    top: -15%;
+  }
   left: 0;
   letter-spacing: .05em;
   line-height: 1;
@@ -15,4 +19,9 @@
   -webkit-text-fill-color: transparent;//くり抜いた部分は背景を表示 
   top: -70px;
   z-index: $layer-up;
+}
+
+.c-about__label--two {
+  left: auto;
+  right: 0;
 }

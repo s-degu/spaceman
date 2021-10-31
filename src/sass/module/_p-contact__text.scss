@@ -1,5 +1,9 @@
 .p-contact__text {
   color: #333;
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 1.5;
+  }
   letter-spacing: .02em;
   line-height: 2;
   margin-top: rem(40);

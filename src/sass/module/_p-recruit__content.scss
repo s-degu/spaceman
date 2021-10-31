@@ -1,7 +1,13 @@
 .p-recruit__content {
   background-color: $white;
-  padding-top: rem(47);
+  @include mq(md) {
+    padding-bottom: rem(20);
+    padding-left: rem(10);
+    padding-right: rem(10);
+    padding-top: rem(20);
+  }
   padding-bottom: rem(47);
   padding-left: rem(139);
   padding-right: rem(132);
+  padding-top: rem(47);
 }

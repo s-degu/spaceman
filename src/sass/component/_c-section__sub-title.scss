@@ -5,6 +5,9 @@
   font-family: $second-font-family;
   font-size: rem(150);
   font-weight: bold;
+  @include mq(md) {
+    font-size: rem(36);
+  }
   line-height: 1;
   text-transform: uppercase;
 }

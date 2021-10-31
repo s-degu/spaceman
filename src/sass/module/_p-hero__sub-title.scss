@@ -2,4 +2,7 @@
   font-size: rem(24);
   font-weight: bold;
   margin-top: rem(40);
+  @include mq(md) {
+    font-size: rem(20);
+  }
 }

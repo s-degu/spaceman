@@ -2,8 +2,13 @@
   background-color: $white;
   color: $black;
   flex: 0 0 50.35971%;
+  @include mq(md) {
+    margin-left: 0;
+    padding: rem(10);
+    width: 100%;
+  }
   margin-left: -140px;
+  padding: rem(45) rem(26);
   position: relative;
   z-index: 0;
-  padding: rem(45) rem(26);
 }

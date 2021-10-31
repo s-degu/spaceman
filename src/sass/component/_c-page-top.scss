@@ -1,9 +1,16 @@
 .c-page-top {
   bottom: 25px;
   height: 200px;
+  @include mq(md) {
+    bottom: 10px;
+    height: 100px;
+    right: 10px;
+    width: 75px;
+  }
   position: fixed;
   right: 40px;
   width: 150px;
+  z-index: $layer-floating
 }
 
 .c-page-top a {

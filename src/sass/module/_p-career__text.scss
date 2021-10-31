@@ -1,7 +1,10 @@
 .p-career__text {
   color: $white;
   font-size: rem(20);
-  letter-spacing: 0.02em;
+  @include mq(md) {
+    padding-right: 0;
+  }
+  letter-spacing: .02em;
   line-height: calc(30/20);
   margin-top: rem(60);
   padding-right: rem(278);

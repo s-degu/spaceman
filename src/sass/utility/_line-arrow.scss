@@ -6,6 +6,9 @@
     content: "";
     display: block;
     height: 2px;
+    @include mq(md) {
+      width: 110%;
+    }
     /*傾きを調節*/
     //   transform: skew(45deg);
     left: 0;
@@ -21,7 +24,7 @@
     display: block;
     height: 2px;
     position: absolute;
-    right: -102%;
+    right: -10%;
     transform: rotate(35deg);
     transition: all .3s;
     /*アニメーションの指定*/

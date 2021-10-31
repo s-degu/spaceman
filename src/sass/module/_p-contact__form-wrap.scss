@@ -10,4 +10,7 @@
   //   padding: rem(10);
   //   border-radius: 10px;
   padding-top: rem(50);
+  @include mq(md) {
+    padding: rem(30) rem(10);
+  }
 }

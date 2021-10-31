@@ -6,6 +6,10 @@
   display: inline-block;
   font-size: rem(24);
   font-weight: bold;
+  @include mq(md ) {
+    padding: rem(20) rem(55);
+    font-size: rem(18);
+  }
   letter-spacing: .02em;
   line-height: calc(32/24);
   padding: rem(20) rem(142);

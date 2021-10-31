@@ -1,7 +1,10 @@
 .p-career__button {
+  @include mq(md) {
+    margin-right: 0;
+  }
+  margin-right: rem(173);
   margin-top: rem(58);
   text-align: right;
-  margin-right: rem(173);
 }
 
 .p-career__button > a {

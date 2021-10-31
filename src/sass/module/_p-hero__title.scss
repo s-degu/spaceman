@@ -3,10 +3,16 @@
   display: inline-block;
   font-size: rem(64);
   font-weight: bold;
+  // padding-right: rem(30);
+  @include mq(md) {
+    font-size: rem(26);
+    padding-bottom: rem(15);
+    padding-left: rem(15);
+    padding-top: rem(15);
+  }
   letter-spacing: .05em;
-  padding-top: rem(31);
   padding-bottom: rem(32);
   padding-left: rem(30);
+  padding-top: rem(31);
   position: relative;
-  // padding-right: rem(30);
 }

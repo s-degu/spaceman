@@ -1,4 +1,10 @@
 .p-career__img {
+  @include mq(md) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    padding-top: 75%;
+  }
   padding-top: 100%;
   position: relative;
 }

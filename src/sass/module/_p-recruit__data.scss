@@ -1,8 +1,11 @@
 .p-recruit__data {
   flex: 0 0 72.76688%;
+  @include mq(md) {
+    margin-left: 0;
+  }
   margin-left: auto;
 }
 
 .p-recruit__data > span {
-    display: inline-block;
+  display: inline-block;
 }

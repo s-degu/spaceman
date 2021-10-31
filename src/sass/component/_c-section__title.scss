@@ -2,10 +2,13 @@
   color: $white;
   font-size: rem(48);
   font-weight: bold;
+  @include mq(md) {
+    font-size: rem(22);
+  }
   letter-spacing: .05em;
   line-height: 1;
-  text-align: center;
   position: relative;
+  text-align: center;
   z-index: $layer-up;
 }
 

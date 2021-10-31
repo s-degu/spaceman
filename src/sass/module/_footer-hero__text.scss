@@ -1,13 +1,23 @@
 .footer-hero__text {
   font-size: rem(36);
   font-weight: bold;
+  @include mq(md) {
+    font-size: rem(16);
+    line-height: 1.5;
+  }
   line-height: 1.5;
 }
 
 .footer-hero__text + span {
   display: inline-block;
-  margin-top: rem(20);
   font-family: $author-font-family;
   font-size: rem(24);
+  @include mq(md) {
+    display: block;
+    text-align: right;
+    margin-top: rem(10);
+    font-size: rem(14);
+  }
   line-height: calc(32/24);
+  margin-top: rem(20);
 }

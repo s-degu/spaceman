@@ -5,6 +5,9 @@
   margin-top: rem(81);
   position: relative;
   text-align: center;
+  @include mq(md) {
+    font-size: rem(12);
+  }
   &::before,
   &::after {
     background-color: $white;

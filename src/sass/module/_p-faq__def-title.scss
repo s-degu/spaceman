@@ -3,6 +3,10 @@
   border-radius: 10px 10px 0 0;
   color: #1a1a1a;
   cursor: pointer;
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 1.5;
+  }
   line-height: calc(32/16);
   padding-bottom: rem(25);
   padding-left: rem(95);

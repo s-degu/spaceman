@@ -1,5 +1,8 @@
 .p-recruit__item {
   display: flex;
+  @include mq(md) {
+    flex-direction: column;
+  }
   & + & {
     margin-top: rem(40);
   }

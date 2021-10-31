@@ -1,5 +1,13 @@
 .p-footer-nav__item {
   &:not(&:last-child) {
+    @include mq(md) {
+      margin-right: 0;
+    }
     margin-right: rem(40);
+  }
+  & + & {
+    @include mq(md) {
+      margin-top: rem(15);
+    }
   }
 }

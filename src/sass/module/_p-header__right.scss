@@ -1,5 +1,8 @@
 .p-header__right {
-  margin-left: auto;
-  display: flex;
   align-items: center;
+  display: flex;
+  @include mq(md) {
+    display: none;
+  }
+  margin-left: auto;
 }

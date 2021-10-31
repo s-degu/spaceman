@@ -3,6 +3,9 @@
   padding-top: 33.55704%;
   position: relative;
   width: 100%;
+  @include mq(md) {
+    padding-top: 66.66666%;
+  }
 }
 
 .p-about__img img {

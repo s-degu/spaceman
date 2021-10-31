@@ -1,5 +1,8 @@
 .p-career__lists-wrap {
   background-color: $white;
-  padding: rem(60) rem(52) rem(60) rem(59);
+  @include mq(md) {
+    padding: rem(30) rem(10);
+  }
   margin-top: rem(60);
+  padding: rem(60) rem(52) rem(60) rem(59);
 }

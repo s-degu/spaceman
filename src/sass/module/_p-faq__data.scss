@@ -1,34 +1,39 @@
 .p-faq__data {
   background-color: $navy;
+  border-radius: 0 0 10px 10px;
   color: $white;
+  display: none;
+  @include mq(md) {
+    font-size: rem(14);
+    line-height: 1.5;
+    text-align: justify;
+  }
   letter-spacing: .02em;
   line-height: calc(32/16);
-  border-radius: 0 0 10px 10px;
-  padding-top: rem(19);
   padding-bottom: rem(20);
   padding-left: rem(95);
   padding-right: rem(67);
+  padding-top: rem(19);
   position: relative;
-  display: none;
   &::before {
+    align-items: center;
     background-color: $white;
+    border-radius: 50%;
     color: $navy;
     content: "A";
     display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: $second-font-family;
     font-size: rem(24);
     height: 43px;
+    justify-content: center;
     left: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     width: 43px;
-    border-radius: 50%;
   }
 }
 
 .p-faq__data > span {
-    display: block;
+  display: block;
 }

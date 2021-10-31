@@ -1,5 +1,10 @@
 $header-height-pc: 100px;
+$header-height-sp: 80px;
+
 
 .l-header {
   height: $header-height-pc;
+  @include mq(md) {
+    height: $header-height-sp;
+  }
 }
