@@ -1,22 +1,17 @@
 .p-recruit__button {
+  border-radius: 100px;
+  box-shadow: 0 3px 0 5px $cta-bg; /*cssの影の機能を利用してボタンの側面を描いています。ボタンの色より暗い色を指定しましょう*/
+  display: inline-block;
   font-size: rem(24);
   line-height: calc(32/24);
-  padding: rem(20) rem(105);
-  border-radius: 100px;
-  position: relative;
   opacity: 1;
+  padding: rem(20) rem(105);
+  position: relative;
+  transform: translateY(-6px); /*影を使って側面を描いた分、ボタンを上に移動しています*/
+  transition: all .3s;
   z-index: $layer-default;
-  &::before {
-    position: absolute;
-    top: -3px;
-    left: -16px;
-    width: 110%;
-    height: 119%;
-    z-index: $layer-background;
-    content: "";
-    display: block;
-    background-color: #060C41;
-    border-radius: 100px;
-    // opacity: 1;
+  &:hover {
+    box-shadow: 0 2px 0 0 $cta-bg;/*hoverしたら影が縦に4px減るようにしています*/
+    transform: translateY(-2px);/*影が減った分、下に移動させています。*/
   }
 }
