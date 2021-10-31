@@ -1,0 +1,21 @@
+  .p-drawer__toggle-icon {
+  background: $white;
+  border-radius: 5px;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: ease .5s;
+  width: 27px;
+}
+
+.p-drawer__toggle-icon:nth-child(1) {
+  top: 0;
+}
+
+.p-drawer__toggle-icon:nth-child(2) {
+  margin: 5px 0;
+}
+
+.p-drawer__toggle-icon:nth-child(1) {
+  bottom: 0;
+}

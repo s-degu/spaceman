@@ -1,0 +1,22 @@
+.p-drawer__toggle {
+  z-index: 9999;
+}
+
+.p-drawer__toggle.is-checked .p-drawer__toggle-icon {
+  background-color: #fff;
+}
+
+.p-drawer__toggle.is-checked .p-drawer__toggle-icon:nth-child(1) {
+  top: 8px;
+  transform: rotate(45deg);
+}
+
+.p-drawer__toggle.is-checked .p-drawer__toggle-icon:nth-child(2) {
+  opacity: 0;
+  transform: translateY(-50%);
+}
+
+.p-drawer__toggle.is-checked .p-drawer__toggle-icon:nth-child(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}

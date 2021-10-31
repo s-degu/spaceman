@@ -18,7 +18,16 @@ jQuery(function ($) {
     }
   });
   var topBtn = $('.c-page-top');
-  topBtn.hide(); // トップページボタンの表示設定
+  topBtn.hide(); // ドロワーメニュー用
+
+  $(".js-drawer").on("click", function (e) {
+    e.preventDefault();
+    var targetClass = $(this).data("target");
+    $("." + targetClass).toggleClass("is-checked"); // $(".p-drawer__menus-wrap").toggleClass("is-open");
+    // $(".p-drawer__menus-wrap").fadeToggle();
+
+    return false;
+  }); // トップページボタンの表示設定
 
   $(window).scroll(function () {
     if ($(this).scrollTop() > $('.p-hero').height()) {
