@@ -1,3 +1,8 @@
 .p-faq__items {
-    margin-top: rem(62);
+  @include mq(md) {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: rem(600);
+  }
+  margin-top: rem(62);
 }

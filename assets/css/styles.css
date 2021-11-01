@@ -309,7 +309,7 @@ select::-ms-expand {
 @media screen and (max-width: 767px) {
   .c-about__label {
     font-size: 3.75rem;
-    top: -15%;
+    top: -27px;
   }
 }
 
@@ -500,6 +500,7 @@ select::-ms-expand {
 
 .p-about__inner {
   max-width: 1242px;
+  max-width: 77.625rem;
 }
 
 .p-about__item {
@@ -551,6 +552,14 @@ select::-ms-expand {
 .p-about__items {
   margin-top: 82px;
   margin-top: 5.125rem;
+}
+
+@media screen and (max-width: 767px) {
+  .p-about__items {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37.5rem;
+  }
 }
 
 .p-about__text {
@@ -678,6 +687,9 @@ select::-ms-expand {
 @media screen and (max-width: 767px) {
   .p-career__lists-wrap {
     padding: 1.875rem 0.625rem;
+    max-width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -743,9 +755,12 @@ select::-ms-expand {
 
 @media screen and (max-width: 767px) {
   .p-check__insta {
-    margin-right: 0;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
+    margin-left: auto;
+    margin-right: 0;
+    margin-right: auto;
+    max-width: 37.5rem;
   }
 }
 
@@ -974,6 +989,7 @@ select::-ms-expand {
   font-size: 24px;
   font-size: 1.5rem;
   height: 43px;
+  height: 2.6875rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -983,6 +999,7 @@ select::-ms-expand {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 43px;
+  width: 2.6875rem;
 }
 
 .p-faq__data > span {
@@ -1028,6 +1045,7 @@ select::-ms-expand {
   font-size: 24px;
   font-size: 1.5rem;
   height: 43px;
+  height: 2.6875rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1037,6 +1055,7 @@ select::-ms-expand {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 43px;
+  width: 2.6875rem;
 }
 
 .p-faq__def-title::after {
@@ -1079,6 +1098,14 @@ select::-ms-expand {
   margin-top: 3.875rem;
 }
 
+@media screen and (max-width: 767px) {
+  .p-faq__items {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37.5rem;
+  }
+}
+
 .p-faq {
   background-image: url(../../../assets/images/faq_bg.jpg);
   background-position: center;
@@ -1107,7 +1134,7 @@ select::-ms-expand {
 
 @media screen and (max-width: 767px) {
   .p-footer__logo img {
-    width: 30%;
+    width: 20%;
   }
 }
 
@@ -1171,6 +1198,9 @@ select::-ms-expand {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37.5rem;
   }
 }
 
@@ -1298,6 +1328,14 @@ select::-ms-expand {
   padding: 0.625rem;
 }
 
+@media screen and (max-width: 1023px) {
+  .p-form__inner {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37.5rem;
+  }
+}
+
 .p-form__item {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1359,6 +1397,13 @@ select::-ms-expand {
   padding-left: 2.9375rem;
   position: relative;
   width: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .p-form__privacy {
+    font-size: 0.875rem;
+    padding-left: 2.3125rem;
+  }
 }
 
 .p-form__privacy::before {
@@ -1517,6 +1562,7 @@ select::-ms-expand {
 
 .p-header__logo {
   width: 200px;
+  width: 12.5rem;
 }
 
 @media screen and (max-width: 767px) {
@@ -1665,6 +1711,123 @@ select::-ms-expand {
   background: linear-gradient(90deg, white 0%, white 70%, #acacac 70%, #acacac 100%);
 }
 
+#loading {
+  background: #333;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+#loading_box {
+  left: 50%;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.loading-one {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+  display: inline-block;
+}
+
+.loading-one p.loading-txt {
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: .25em;
+  line-height: 2.0;
+  padding: 2em 0;
+}
+
+/*==================
+  .animation_loading
+  ==================*/
+.animation_loading {
+  -webkit-animation: equalizer_loading 7000ms infinite;
+          animation: equalizer_loading 7000ms infinite;
+  -webkit-animation-iteration-count: 10;
+          animation-iteration-count: 10;
+}
+
+@-webkit-keyframes equalizer_loading {
+  0% {
+    width: 70%;
+  }
+  10% {
+    width: 50%;
+  }
+  20% {
+    width: 100%;
+  }
+  30% {
+    width: 10%;
+  }
+  40% {
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 10%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes equalizer_loading {
+  0% {
+    width: 70%;
+  }
+  10% {
+    width: 50%;
+  }
+  20% {
+    width: 100%;
+  }
+  30% {
+    width: 10%;
+  }
+  40% {
+    width: 50%;
+  }
+  50% {
+    width: 70%;
+  }
+  60% {
+    width: 50%;
+  }
+  70% {
+    width: 10%;
+  }
+  80% {
+    width: 100%;
+  }
+  90% {
+    width: 10%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
 .p-recruit__button-wrap {
   margin-top: 55px;
   margin-top: 3.4375rem;
@@ -1736,6 +1899,14 @@ select::-ms-expand {
   padding: 0.625rem;
 }
 
+@media screen and (max-width: 767px) {
+  .p-recruit__contents {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 37.5rem;
+  }
+}
+
 .p-recruit__data {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 72.76688%;
@@ -1791,10 +1962,10 @@ select::-ms-expand {
 }
 
 .p-recruit__inner {
-  max-width: 750px;
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
+  max-width: 750px;
+  width: 100%;
 }
 
 .p-recruit__item {
@@ -1886,8 +2057,8 @@ select::-ms-expand {
   .p-career__img {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
-    padding-top: 75%;
+    width: 60%;
+    padding-top: 60%;
   }
 }
 
@@ -1984,15 +2155,20 @@ textarea:focus {
   display: block;
   height: 2px;
   position: absolute;
-  right: -10%;
+  right: -102%;
   -webkit-transform: rotate(35deg);
           transform: rotate(35deg);
   -webkit-transition: all .3s;
   transition: all .3s;
   /*アニメーションの指定*/
-  transition: all .3s;
   /*矢印の形状*/
   width: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .line-arrow::after {
+    right: -10%;
+  }
 }
 
 /*hoverした際の移動*/
@@ -2000,8 +2176,20 @@ textarea:focus {
   width: 220%;
 }
 
+@media screen and (max-width: 767px) {
+  .line-arrow:hover::before {
+    width: 110%;
+  }
+}
+
 .line-arrow:hover::after {
   right: -122%;
+}
+
+@media screen and (max-width: 767px) {
+  .line-arrow:hover::after {
+    right: -10%;
+  }
 }
 
 .u-img-aspect {

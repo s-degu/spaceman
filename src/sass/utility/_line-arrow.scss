@@ -23,12 +23,15 @@
     content: "";
     display: block;
     height: 2px;
+    @include mq(md) {
+      right: -10%;
+    }
     position: absolute;
-    right: -10%;
+    right: -102%;
     transform: rotate(35deg);
     transition: all .3s;
     /*アニメーションの指定*/
-    transition: all .3s;
+    // transition: all .3s;
     /*矢印の形状*/
     width: 15px;
   }
@@ -36,9 +39,15 @@
 
 /*hoverした際の移動*/
 .line-arrow:hover::before {
+  @include mq(md) {
+    width: 110%;
+  }
   width: 220%;
 }
 
 .line-arrow:hover::after {
+  @include mq(md) {
+    right: -10%;
+  }
   right: -122%;
 }

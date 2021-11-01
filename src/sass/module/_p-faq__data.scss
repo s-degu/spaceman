@@ -24,13 +24,13 @@
     display: flex;
     font-family: $second-font-family;
     font-size: rem(24);
-    height: 43px;
+    height: rem(43);
     justify-content: center;
     left: 20px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    width: 43px;
+    width: rem(43);
   }
 }
 

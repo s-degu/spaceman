@@ -2,6 +2,10 @@
   color: #333;
   cursor: pointer;
   display: inline-block;
+  @include mq(md) {
+    font-size: rem(14);
+    padding-left: rem(37);
+  }
   letter-spacing: .02em;
   padding-left: rem(47);
   //   line-height: 2;

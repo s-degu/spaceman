@@ -1,5 +1,5 @@
 .p-header__logo {
-  width: 200px;
+  width: rem(200);
   @include mq(md) {
     width: rem(100)
   }
