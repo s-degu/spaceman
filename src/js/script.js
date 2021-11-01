@@ -27,9 +27,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     e.preventDefault();
     let targetClass = $(this).data("target");
     $("." + targetClass).toggleClass("is-checked");
-    // $(".p-drawer__menus-wrap").toggleClass("is-open");
+    $(".p-drawer-menu").toggleClass("is-open");
     // $(".p-drawer__menus-wrap").fadeToggle();
     return false;
+  });
+  // ドロワーメニューのリンクをクリックしたらドロワーメニューを閉じる
+  $('.p-drawer-menu__item a[href]').on('click', function (event) {
+    $('.js-drawer').trigger('click');
+    // alert("test");
   });
 
   // トップページボタンの表示設定

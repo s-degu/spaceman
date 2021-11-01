@@ -6,3 +6,9 @@
     padding-top: 62.5%;
   }
 }
+
+.p-footer-hero__img {
+  @include mq(md) {
+    object-position: center right;
+  }
+}

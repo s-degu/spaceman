@@ -1,8 +1,9 @@
 .p-header__drawer {
+  display: none;
+  @include mq(md) {
+    display: block;
+  }
   margin-left: auto;
   position: relative;
   z-index: $layer-drawer;
-  @include mq(md) {
-      display: block;
-  }
 }

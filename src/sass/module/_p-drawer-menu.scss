@@ -1,0 +1,20 @@
+.p-drawer-menu {
+  align-items: center;
+  background-color: $white;
+  bottom: 0;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transform: translateX(-110%);
+  transition: ease .5s;
+  width: 70%;
+}
+
+// open時の動き
+.p-drawer-menu.is-open {
+  overflow-y: auto;
+  transform: translateX(0);
+}

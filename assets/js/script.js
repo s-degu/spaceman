@@ -23,10 +23,14 @@ jQuery(function ($) {
   $(".js-drawer").on("click", function (e) {
     e.preventDefault();
     var targetClass = $(this).data("target");
-    $("." + targetClass).toggleClass("is-checked"); // $(".p-drawer__menus-wrap").toggleClass("is-open");
-    // $(".p-drawer__menus-wrap").fadeToggle();
+    $("." + targetClass).toggleClass("is-checked");
+    $(".p-drawer-menu").toggleClass("is-open"); // $(".p-drawer__menus-wrap").fadeToggle();
 
     return false;
+  }); // ドロワーメニューのリンクをクリックしたらドロワーメニューを閉じる
+
+  $('.p-drawer-menu__item a[href]').on('click', function (event) {
+    $('.js-drawer').trigger('click'); // alert("test");
   }); // トップページボタンの表示設定
 
   $(window).scroll(function () {

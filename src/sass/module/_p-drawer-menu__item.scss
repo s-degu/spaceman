@@ -1,0 +1,17 @@
+.p-drawer-menu__item {
+  &:last-child {
+    margin-top: auto;
+  }
+}
+
+.p-drawer-menu__item > a {
+  display: block;
+  padding-bottom: rem(30);
+  padding-top: rem(30);
+}
+
+.p-drawer-menu__button-wrap {
+  padding-bottom: rem(30);
+  padding-top: rem(30);
+  display: block;
+}
