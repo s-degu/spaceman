@@ -1,4 +1,10 @@
 .p-drawer-menu__items {
+  height: 100%;
+  margin-bottom: 50px;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: scroll;
+  padding-bottom: 200px;
+  padding-top: 200px;
   text-align: center;
   width: 100%;
 }

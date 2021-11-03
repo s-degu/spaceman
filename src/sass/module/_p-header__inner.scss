@@ -2,4 +2,8 @@
   align-items: center;
   display: flex;
   height: inherit;
+  @include mq(md) {
+    padding-left: rem(20);
+  }
+  padding-left: rem(121);
 }

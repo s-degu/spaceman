@@ -1,10 +1,11 @@
 .p-hero__textarea {
   color: $white;
+  @include mq(md) {
+    padding-left: 0;
+    padding-right: $padding-sp;
+  }
+  padding-left: rem(96);
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  @include mq(md) {
-    padding-right: $padding-sp;
-  }
 }
-

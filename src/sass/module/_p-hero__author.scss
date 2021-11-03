@@ -1,6 +1,7 @@
 .p-hero__author {
   display: block;
   font-family: $author-font-family;
+  font-style: italic;
   @include mq(md) {
     margin-top: 0;
     text-align: right;

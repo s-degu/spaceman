@@ -1,13 +1,23 @@
 .p-form__inner {
   background-color: $gray;
   border-radius: 10px;
-  @include mq(lg) {
+  @include mq(md) {
     margin-left: auto;
     margin-right: auto;
     max-width: rem(600);
   }
+  @include mq(lg) {
+    margin-left: auto;
+    margin-right: auto;
+    // max-width: rem(700);
+    width: 70%;
+  }
+  @include mq(sm) {
+    width: 100%;
+  }
   max-width: 900px;
   padding: rem(10);
+  width: 100%;
   //   background-color: $white;
   //   padding-top: rem(50);
   //   padding-bottom: rem(50);

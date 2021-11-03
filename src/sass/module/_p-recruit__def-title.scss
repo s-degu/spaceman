@@ -2,8 +2,8 @@
   flex: 0 0 13.94335%;
   @include mq(md) {
     width: 100%;
-    border-bottom: 2px dotted #333;
-    text-align: center;
+    border-bottom: 4px double #333;
+    // text-align: center;
     padding-bottom: rem(5);
     margin-bottom: rem(5);
   }

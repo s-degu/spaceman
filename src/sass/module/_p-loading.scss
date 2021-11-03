@@ -3,6 +3,9 @@
   background: #333;
   bottom: 0;
   height: 100%;
+  @include mq(md) {
+    display: none;
+  }
   left: 0;
   position: fixed;
   top: 0;

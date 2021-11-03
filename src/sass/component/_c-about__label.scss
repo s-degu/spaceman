@@ -10,7 +10,16 @@
   font-weight: bold;
   @include mq(md) {
     font-size: rem(60);
-    top: -27px;
+    top: -36px;
+  }
+  @include mq(lg) {
+    top: -34px;
+  }
+  @include mq(sm) {
+    top: -31px;
+  }
+  @include mq(inner) {
+    top: -45px;
   }
   left: 0;
   letter-spacing: .05em;

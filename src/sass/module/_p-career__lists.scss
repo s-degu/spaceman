@@ -1,5 +1,7 @@
 .p-career__lists {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   @include mq(md) {
     flex-direction: column;
   }

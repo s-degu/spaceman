@@ -36,6 +36,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $('.js-drawer').trigger('click');
     // alert("test");
   });
+  // ドロワーメニュー表示時の背景固定
+  $(".js-drawer").click(function () {　  // トリガーをクリックした時の条件分岐
+    if ($(this).hasClass("is-checked")) {  // ナビを閉じるときの処理
+      $("html").addClass("is-fixed");  // 背景固定解除！
+    } else {                              // ナビを開くときの処理
+      $("html").removeClass("is-fixed");     // 背景固定！
+    }
+  });
 
   // トップページボタンの表示設定
   $(window).scroll(function () {
@@ -108,9 +116,9 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
   });
 
   //ローディング画面の表示
-  $(window).on('load', function () {
-    $("#loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
-    $("#loading_box").delay(1200).fadeOut('slow');//ローディングテキストを1.2秒（1200ms）待機してからフェードアウト
-  });
+  // $(window).on('load', function () {
+  //   $("#loading").delay(1500).fadeOut('slow');//ローディング画面を1.5秒（1500ms）待機してからフェードアウト
+  //   $("#loading_box").delay(1200).fadeOut('slow');//ローディングテキストを1.2秒（1200ms）待機してからフェードアウト
+  // });
 
 });

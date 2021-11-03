@@ -10,11 +10,26 @@
   position: fixed;
   right: 40px;
   width: 150px;
-  z-index: $layer-floating
+  z-index: $layer-floating;
 }
 
 .c-page-top a {
   display: block;
+  &:hover {
+    animation: fuwafuwa 2s infinite;
+  }
+
+  @keyframes fuwafuwa {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
 }
 
 .c-page-top img {

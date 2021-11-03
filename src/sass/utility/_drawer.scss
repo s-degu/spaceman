@@ -1,0 +1,7 @@
+// ドロワー表示の背景固定
+html.is-fixed body {
+  @include mq(md) {
+    height: 100%;
+    overflow: hidden;
+  }
+}

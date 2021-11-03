@@ -7,7 +7,7 @@
     @include mq(md) {
       margin-right: 0;
     }
-    margin-right: rem(91);
+    margin-right: 7.64063%;
   }
   & + & {
     @include mq(md) {
