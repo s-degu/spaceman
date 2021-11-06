@@ -3,12 +3,11 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  // height: 800px;
-  position: relative;
   height: calc(100vh - 100px);
   // height: 800px;
   @include mq(md) {
-    height: calc(100vh - 80px);
     background-position: center right 17%;
+    height: calc(100vh - 80px);
   }
+  position: relative;
 }

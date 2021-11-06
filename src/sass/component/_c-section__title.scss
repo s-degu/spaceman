@@ -19,4 +19,10 @@
 
 .c-section__title--instagram {
   color: #333;
+  letter-spacing: 0.02em;
+}
+
+.c-section__title--instagram > span {
+  font-family: $second-font-family;
+  display: inline-block;
 }

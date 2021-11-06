@@ -3,9 +3,6 @@
   background: #333;
   bottom: 0;
   height: 100%;
-  @include mq(md) {
-    display: none;
-  }
   left: 0;
   position: fixed;
   top: 0;
@@ -28,6 +25,9 @@
 .loading-one p.loading-txt {
   color: #fff;
   font-size: 20px;
+  @include mq(md) {
+    font-size: 14px;
+  }
   letter-spacing: .25em;
   line-height: 2.0;
   padding: 2em 0;
@@ -38,7 +38,7 @@
   ==================*/
 
 .animation_loading {
-  animation: equalizer_loading 7000ms infinite;
+  animation: equalizer_loading 7000ms;
   animation-iteration-count: 10;
 }
 @keyframes equalizer_loading {
@@ -52,7 +52,7 @@
     width: 100%;
   }
   30% {
-    width: 10%;
+    width: 20%;
   }
   40% {
     width: 50%;
@@ -64,13 +64,13 @@
     width: 50%;
   }
   70% {
-    width: 10%;
+    width: 20%;
   }
   80% {
     width: 100%;
   }
   90% {
-    width: 10%;
+    width: 20%;
   }
   100% {
     width: 70%;

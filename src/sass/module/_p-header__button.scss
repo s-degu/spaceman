@@ -1,45 +1,47 @@
 .p-header__button {
   border-radius: 100px;
+  box-shadow: 0 0 0 5px #060c41;
   display: inline-block;
   font-size: rem(18);
   font-weight: bold;
   letter-spacing: .02em;
   overflow: hidden;
-  padding: rem(22) rem(63);
+  padding: rem(17) rem(63);
   position: relative;
+  line-height: calc(16/18);
   &::before {
+    animation: shiny-btn1 3s infinite;
     background-color: #fff;
-    content: "";
+    content: '';
+    display: inline-block;
     height: 100%;
-    left: -150%;
-    opacity: 1;
+    left: -25px;
     position: absolute;
-    top: 0;
-    transform: skewX(-45deg);
-    width: 140%;
+    top: -53px;
+    width: 30px;
   }
   &:hover {
     &::before {
-      animation: shine 2s cubic-bezier(.5, 0, .5, 1) infinite;
+      animation: shine 1.5s ease-in-out infinite;
     }
   }
   /* 光の動き */
   @keyframes shine {
     0% {
-      left: -150%;
       opacity: 0;
+      -webkit-transform: scale(0) rotate(45deg);
     }
-    70% {
-      left: -150%;
+    20% {
       opacity: .5;
+      -webkit-transform: scale(0) rotate(45deg);
     }
-    71% {
-      left: -150%;
+    21% {
       opacity: 1;
+      -webkit-transform: scale(0) rotate(45deg);
     }
     100% {
-      left: -20%;
       opacity: 0;
+      -webkit-transform: scale(50) rotate(45deg);
     }
   }
 }

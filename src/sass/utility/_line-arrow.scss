@@ -2,33 +2,33 @@
   position: relative;
   &::before {
     background-color: #333;
-    bottom: -8px;
+    bottom: -5px;
     content: "";
     display: block;
     height: 2px;
     @include mq(md) {
-      width: 110%;
+      width: 125%;
     }
     /*傾きを調節*/
     //   transform: skew(45deg);
-    left: 0;
+    left: -10px;
     // margin: -10px 0 0 -25px;
     position: absolute;
     transition: all .3s;
-    width: 200%;
+    width: 237%;
   }
   &::after {
     background: #333;
-    bottom: -4px;
+    bottom: 0;
     content: "";
     display: block;
     height: 2px;
     @include mq(md) {
-      right: -10%;
+      right: -17%;
     }
     position: absolute;
-    right: -102%;
-    transform: rotate(35deg);
+    right: -129%;
+    transform: rotate(45deg);
     transition: all .3s;
     /*アニメーションの指定*/
     // transition: all .3s;
@@ -42,12 +42,12 @@
   @include mq(md) {
     width: 110%;
   }
-  width: 220%;
+  width: 257%;
 }
 
 .line-arrow:hover::after {
   @include mq(md) {
     right: -10%;
   }
-  right: -122%;
+  right: -148%;
 }

@@ -11,10 +11,12 @@
     padding-top: rem(15);
   }
   letter-spacing: .05em;
-  padding-bottom: rem(32);
+  padding-bottom: rem(30);
   padding-left: rem(30);
-  padding-top: rem(31);
+  padding-top: rem(30);
   position: relative;
+  line-height: calc(60/64);
+  // margin-top: 10px;
 }
 
 .p-hero__title > span {
